@@ -1,0 +1,8 @@
+include:
+  - project: 'agents/platform'
+    ref: v0.1.2
+    file: '/ci/skill-ci.gitlab-ci.yml'
+
+# Static validation (SKILL.md metadata, yaml/shell/python lint, secret scan) +
+# stdlib/pytest unit tests. No container build; the triage helper is offline and
+# the category tools are installed per challenge, not in CI.
